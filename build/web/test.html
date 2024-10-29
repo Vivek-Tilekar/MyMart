@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Checkout</h2>
+
+        <!-- Order Summary Section -->
+        <div class="order-summary">
+            <h3>Order Summary</h3>
+            <p>Product 1: <span>$25.00</span></p>
+            <p>Product 2: <span>$15.00</span></p>
+            <p>Shipping: <span>$5.00</span></p>
+            <p class="total">Total: <span>$45.00</span></p>
+        </div>
+
+        <!-- Payment Information Section -->
+        <form action="#" method="post">
+            <h3>Payment Information</h3>
+
+            <label for="cardName">Cardholder's Name</label>
+            <input type="text" id="cardName" name="cardName" required>
+
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+
+            <label for="expDate">Expiration Date</label>
+            <input type="text" id="expDate" name="expDate" placeholder="MM/YY" required>
+
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" required>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+</body>
+</html>
